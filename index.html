@@ -7,9 +7,16 @@
 	<title>broadbean</title>
 </head>
 <body>
-<div ng-controller="mainCtrl">sup</div>
-Hello!
-
-<script src="./src/main.js"></script>
+	<div ng-controller="mainCtrl">
+		<div ng-show="movieData.length > 0">
+			<movie-list info="hundred"></movie-list>
+			<movie-list info="ninety"></movie-list>
+			<movie-list info="eighty"></movie-list>
+			<movie-list info="seventy"></movie-list>
+			<movie-list info="zero"></movie-list>
+		</div>
+	</div>
+	<script src="./src/main.js"></script>
+	<script src="./src/factories/mainFactory.js"></script>
 </body>
 </html>

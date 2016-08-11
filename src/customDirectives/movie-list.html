@@ -1,0 +1,9 @@
+<div>
+<h1>{{movieList.name}}</h1>
+<ul>
+	<li ng-repeat="movie in movieList.list | orderBy: 'title'">
+		<span>{{movie.title + "    "}}</span>
+		<span>{{movie.metacriticScore}}</span>
+	</li>
+</ul>
+</div>
